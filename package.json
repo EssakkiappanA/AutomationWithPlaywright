@@ -1,0 +1,23 @@
+{
+  "name": "automationwithplaywright",
+  "version": "1.0.0",
+  "description": "Test Automation using Playwright and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:dashboard": "npx playwright test tests/dashboard.spec.ts",
+    "test:performance": "npx playwright test tests/performance.spec.ts", 
+    "test:myinfo": "npx playwright test tests/myinfo.spec.ts",
+    "report": "npx playwright show-report"
+  },
+  "keywords": ["automation", "playwright", "typescript", "testing"],
+  "author": "Automation Engineer",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.8.0",
+    "typescript": "^5.2.2"
+  }
+}
